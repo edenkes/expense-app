@@ -1,2 +1,10 @@
 # Project exclude paths
 /node_modules/
+/public/bundle.js
+/public/bundle.js.map
+/.idea/modules.xml
+/.idea/r-13-05-rendering-expenses.iml
+/public/style.css
+/public/style.css.map
+/.idea/vcs.xml
+/yarn-error.log
