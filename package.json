@@ -5,10 +5,10 @@
   "author": "Andrew Mead",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
+    "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -23,13 +23,14 @@
     "css-loader": "0.28.4",
     "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
-    "live-server": "^1.2.0",
+    "firebase": "4.2.0",
     "moment": "2.18.1",
     "node-sass": "^5.0.0",
     "normalize.css": "7.0.0",
+    "numeral": "2.0.6",
     "react": "15.6.1",
-    "react-addons-shallow-compare": "^16.0.0-alpha.3",
-    "react-dates": "12.7.0",
+    "react-addons-shallow-compare": "15.6.0",
+    "react-dates": "12.3.0",
     "react-dom": "15.6.1",
     "react-modal": "2.2.2",
     "react-redux": "5.0.5",
@@ -39,7 +40,13 @@
     "style-loader": "0.18.2",
     "uuid": "3.1.0",
     "validator": "8.0.0",
-    "webpack": "3.1.0",
+    "webpack": "3.1.0"
+  },
+  "devDependencies": {
+    "enzyme": "2.9.1",
+    "enzyme-to-json": "1.5.1",
+    "jest": "20.0.4",
+    "react-test-renderer": "15.6.1",
     "webpack-dev-server": "2.5.1"
   }
 }
