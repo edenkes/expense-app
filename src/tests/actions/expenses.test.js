@@ -33,7 +33,6 @@ test('should setup remove expense action object', () => {
 test('should remove expense to database and store', (done) => {
     const store = createMockStore({});
 
-
     store.dispatch(startRemoveExpense(expenses[1])).then(() => {
         const actions = store.getActions()
         expect(actions[0]).toEqual({
