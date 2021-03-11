@@ -13,3 +13,7 @@
 /public/bundle 2.js
 /public/style.css 2.map
 /public/style 2.css
+.env.development
+.env.test
+.firebaserc
+database.rules.json
